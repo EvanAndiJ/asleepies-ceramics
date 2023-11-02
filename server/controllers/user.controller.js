@@ -89,3 +89,71 @@ exports.deleteUser = async (req, res) => {
   return res.status(200).send({message: 'Account deleted-_-'});
   
 }
+
+exports.getCart = async (req, res) => {
+  // const cartId = req.body.cartId
+  
+  // CartItem.findAll({
+  //   where: {
+  //     cartId: cartId
+  //   }
+  // })
+  // .then(async cartItems => { if (cartItems.length) {
+  //   const ids = cartItems.map(i=>i.productId)
+  //   const productItems = await Product.findAll({
+  //     where: {
+  //       id: {
+  //         [Op.or]: ids
+  //       }
+  //     }
+  //   })
+  //   return res.status(200).send({cartItems: cartItems, productItems:productItems})
+  // } else {
+  //   return res.status(200).send({cartItems: [], productItems: []})
+  // }
+
+  // })
+}
+exports.addToCart = (req, res) => {
+  // const userId = req.body.userId;
+  // const cartId = req.body.cartId;
+  // const productId = req.body.productId;
+  // const price = req.body.price;
+
+  // Cart.findOne({ where: {id: cartId}}).then(async cart => {
+  //   if (!cart) {
+  //     const newCart = await Cart.create({total: 0, count: 0, userId: userId});
+  //     cartId = newCart.id;
+  //   }
+  //   CartItem.findAll({ where: {cartId: cartId} }).then( async items => {
+  //     if (items.length) {
+  //       const dupCheck = await items.filter(i => i.productId === productId)
+  //       if (dupCheck.length) {
+  //         return res.status(401).send({ message: 'Item already in cart.' })
+  //       } 
+  //     } 
+  //     const cartItem = await CartItem.create({productId: productId, cartId: cartId})
+  //     const cart = await Cart.findOne({ where: { id: cartId } })
+  //     cart.increment('total', { by: price })
+  //     cart.increment('count')
+  //     return res.status(200).send({message:`Added to cart`, cartItem: cartItem})
+  //   })
+  // })
+}
+exports.removeFromCart = async (req, res) => {
+  
+  // const cartId = req.body.cartId
+  // const productId = req.body.productId
+  
+  // await CartItem.destroy({ 
+  //   where: {
+  //     productId: productId, 
+  //     cartId: cartId
+  // }})
+  // const item = await Product.findOne({ where: { id: productId }})
+  // const cart = await Cart.findOne({ where: { id: cartId }})
+  // cart.decrement('count')
+  // cart.decrement('total', {by: item.price})
+  // return res.status(200).send({
+  //   message: `Item removed from cart`, newTotal: cart.total-item.price})
+}

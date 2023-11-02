@@ -14,15 +14,11 @@
   },
   "repository": {
     "type": "git", 
-    "url": "git+https://github.com/Asleepies/AsleepiesCeramics.git"
+    "url": "git+https://github.com/EvanAndiJ/asleepies-ceramics.git"
   },
   "keywords": [],
   "author": "asleepies",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Asleepies/AsleepiesCeramics/issues"
-  },
-  "homepage": "https://github.com/Asleepies/AsleepiesCeramics#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",

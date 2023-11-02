@@ -15,10 +15,10 @@ process.env.NODE_ENV === 'production'
     }
   }
 : { 
-  host: 'localhost',
-  user: 'pots',
-  password: 'password',
-  db: 'asleepies',
+  host: process.env.LOC_HOST,
+  user: process.env.LOC_USER,
+  password: process.env.LOC_PASSWORD,
+  db: process.env.LOC_NAME,
   dialect: "postgres",
   pool: {
     max: 5,

@@ -18,7 +18,6 @@ import Signup from './routes/signup'
 import Contact from './routes/contact';
 
 import Dashboard from './routes/dashboard'
-import DevTests from './components/devTests';
 
 
 
@@ -59,7 +58,6 @@ root.render(
       </Route>
 
       <Route path="*" element={<h1>Oops, nothing here</h1>} />
-    <Route path="/tests" element={<DevTests />} ></Route>
     </Routes>
 
     </BrowserRouter>
