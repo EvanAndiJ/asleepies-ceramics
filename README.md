@@ -6,4 +6,3 @@ Asleepies eCommrce app
 -Front-End: Typescript, React, React-Router-Dom, React-Bootstrap, React-Paypal-js
 -Back End: Node, Express, Sequelize, PostgrSQL, Nodemailer, Dotenv, Jsonwebtoken, bcryptjs 
 
-This repository is for code review purposes, it won't have access to a database if run locally.

@@ -1,21 +1,23 @@
 require('dotenv').config({
   debug: false 
 })
-const path = require('path')
 const express = require('express');
 const cors = require('cors')
+
+const path = require('path')
 const bodyParser = require('body-parser')
-const app = express();
-const db = require("./models");
 const corsOptions = {
   origin: ["https://localhost:3001", 'https://asleepies-ceramics.herokuapp.com/ ']
 };
+
+const app = express();
 app.use(cors(corsOptions))
 app.use(bodyParser.json());
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '../client/build')))
 
+const db = require("./models");
 db.sequelize.sync({alter: true})
 
 

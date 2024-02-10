@@ -1,0 +1,430 @@
+body {
+    text-align: center;
+    background-color: rgb(68, 68, 68); 
+}
+#devNav * {
+    margin: 1em;
+}
+.shadows {
+    box-shadow: 10px 20px 40px 6px rgba(0, 0, 0, 0.411);
+}
+.text-shadow {
+    text-shadow: 10px 20px 10px rgb(0, 0, 0);
+}
+
+#appDiv {
+    min-width: 360px;
+    color: white;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+#logoHead {
+    margin: .5em;
+    width: 70%;
+    max-width: 33em;
+}
+#userMenu {
+    position: absolute;
+    right: 0;
+    margin: .25em;
+    padding: 0;
+    color: white;
+    font-size: 1.5em;
+    background-color: rgba(198, 86, 86, 0);
+    border: none;
+    
+}
+.navDiv {
+    margin-bottom: 1rem;
+}
+.navBar {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+#cartBadge {
+    scale: .75;
+}
+.routeLink {
+    color: white;
+    text-decoration: none;
+    margin: 0 .5em;
+}
+.rl:hover {
+    color: black;
+    text-decoration: underline;
+}
+.checkoutLink {
+    /* width: 5em; */
+    padding: 0 1em;
+    border-radius: 3px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.aboutPage {
+    background-color: white;
+    width: 50%;
+    min-width: 18em;
+    margin: auto;
+    border-radius: .25rem;
+    color: black;
+    padding: .5rem;
+}
+
+#contactPage {
+    width: 18em;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border-radius: .25rem;
+}
+.contactLink {
+    color: black;
+    text-decoration: none;
+}
+#contactPage p, #contactPage h4 {
+    margin: 0;
+}
+#contactForm {
+    margin-top: .5em;
+    text-align: left;
+}
+#contactDetails {
+    width: 90%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#contactDetails label{
+    margin: .08em;
+}
+.bio-photo {
+    width: 40%;
+}
+
+
+.dropdown-toggle::after {
+    display: none !important; 
+}
+#shopDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.itemCard {
+    width: 40%;
+    max-width: 33em;
+    margin: 1em;
+    align-items: center;
+    padding: 0;
+    border: 2px solid rgba(0,0,0,.125);
+    justify-content: space-between;
+}
+.itemCard * {
+    color: black;
+    text-decoration: none;
+}
+.itemCardBody {
+    /* margin: 0; */
+    text-decoration: none;
+    margin: 0 .25em;
+}
+.img-front {
+    transition: transform .5s;
+    transform-style: preserve-3d;
+}
+
+.addToCart{ 
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid grey;
+    border-radius: 4px;
+    background-color: white;
+    margin-bottom: .5em;
+}
+.addToCart:hover {
+    color:white;
+    background-color: black;
+}
+.addToCart:active {
+    scale: 1;
+    background-color: rgb(203, 203, 203);
+}
+#dashboardDiv {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.dashboardAlert {
+    position: absolute;
+    background-color: white;
+    color: black;
+    height: 1.65em;
+    padding: 0 .5rem;
+    box-shadow: 0 0 9px 3px rgba(92, 92, 92, 0.5);
+    z-index: 3;
+}
+.itemEdit {
+    width: min(90%, 33em);
+    /* max-width: 23em; */
+    margin: 1em auto;
+    align-items: center;
+    padding: .25em;
+}
+.itemEdit div {
+    /* width: 98%; */
+    margin-right: .05em;
+}
+.editItemImg {
+    width: 4em;  
+}
+
+#itemInfoInput {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width:100%;
+}
+#itemInfoInput label {
+    margin: .25em 0;
+}
+#itemGallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#itemInfo {
+    margin: auto;
+}
+#itemImg {
+    width: 90%;
+    margin: .5em;
+}
+#thumbGallery {
+    /* height: 5em; */
+    width: 2em;
+    display: flex;
+    justify-content: center;
+}
+#thumbGallery img {
+    height: 3.5em;
+    margin:0 .2em;
+}
+#thumbGallery img:hover {
+    opacity: .5;
+}
+#addImgThumb {
+    display:'flex';
+    width: 40%;
+}
+
+/* CART STYLING  */
+.cart {
+    width: 80%;
+    max-width: 800px;
+    margin: 1em auto;
+    background-color: white;
+    padding: 1em;
+    color: black;
+    border-radius: .25rem;
+}
+.cartItem:hover {
+    background-color: rgba(68, 68, 68, .5 );
+}
+#orderComplete {
+    background-color: white;
+    color: black;
+    min-width: 18rem;
+    width: 50%;
+    margin: auto;
+    border-radius: .25rem;
+}
+.checkoutDiv {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cartSummary {
+    border-top: 2px solid white;
+    margin: auto;
+    width: 88%;
+    text-align: right;
+}
+.cartItem {
+    width: 80%;
+    height: 4em;
+    margin: 1em auto;
+    display: flex;
+    align-items: center;
+    font-size: .9em;
+}
+.cartItem * {
+    color: black;
+    text-decoration: none;
+}
+.cartDesc {
+    text-align: right;
+    height:100%;
+    width: 80%;
+}
+.cartThumb {
+    width: 25%;
+}
+.cartRemove {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+.cartRemove button{
+    border: none;
+    margin: 0 .5em;
+    background: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.foot {
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal-content {
+    max-width: 555px;
+    min-width: 333px;
+}
+
+@media only screen and (min-width: 450px) {
+    #appDiv {
+        margin: auto;
+    }
+    #logoHead {
+        width:20em;
+    }
+    .navBar {
+        width: min(90%, 33em);
+    }
+    
+    .bio-photo {
+        max-width: 15em;
+    }
+    #contactPage {
+        width: 50%;
+        min-width: 18em;
+    }
+    #shopDiv {
+        width: 100%;
+    }
+    #itemCard {
+        width: 45%;
+    }
+    #itemGallery {
+        flex-direction: row-reverse;
+        background-color: white;
+        width: 90%;
+        margin: auto;
+        border-radius: .25rem;
+    }
+    #thumbGallery img {
+        height: 91%;
+        margin: 0 .25em 0 0;
+    }
+    #thumbGallery {
+        flex-direction: column;
+
+        width: 9em;
+    }
+    #itemImg {
+        width: min(90%, 33em)
+    }
+    .cartItem {
+        margin: 4em auto;
+    }
+    .cartThumb {
+        width: 17%;
+        border-radius: 0;
+    }
+    #itemInfo {
+        width: min(90%, 40em);
+    }
+    .modal-header {
+        justify-content: center;
+    }
+    .modal-content {
+        /* width: 38em; */
+    }
+    .carousel {
+        margin: auto;
+        /* width: min(80%, 825px); */
+        max-width: 825px;
+    }
+    .featured-img-con {
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        height: 25em;
+    }
+    .featured-img {
+        width: 100%;
+    }
+}
+
+/* #loginForm {
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: auto;
+}
+#loginForm label {
+    margin: 5px 0;
+}
+#loginForm label input {
+    margin: 0 5px;
+}
+#userPage {
+    width: 80%;
+    text-align:left;
+    margin:auto;
+}
+#userEdit div {
+    text-align: left;
+    margin: .5em 0;
+}
+#userEditorBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: .75em;
+}
+#userEditorBottom button, .contactSubmit {
+    margin: .05em;
+    width: 8em;
+    padding: 0;
+    background-color: white;
+    border-radius: 3px;
+    border: 2px solid gray;
+}
+#userEditorBottom button:active {
+    background-color: gray;
+    
+}
+.editButtons {
+    margin: .5em 0 .25em .5em;
+    font-size: .75em;
+    border: none;
+    background-color: white;
+} */
