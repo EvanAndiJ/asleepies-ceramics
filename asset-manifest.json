@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/asleepies-ceramics/static/css/main.f4b9b597.css",
-    "main.js": "/asleepies-ceramics/static/js/main.94280ebd.js",
+    "main.js": "/asleepies-ceramics/static/js/main.794fb522.js",
     "index.html": "/asleepies-ceramics/index.html",
     "main.f4b9b597.css.map": "/asleepies-ceramics/static/css/main.f4b9b597.css.map",
-    "main.94280ebd.js.map": "/asleepies-ceramics/static/js/main.94280ebd.js.map"
+    "main.794fb522.js.map": "/asleepies-ceramics/static/js/main.794fb522.js.map"
   },
   "entrypoints": [
     "static/css/main.f4b9b597.css",
-    "static/js/main.94280ebd.js"
+    "static/js/main.794fb522.js"
   ]
 }
