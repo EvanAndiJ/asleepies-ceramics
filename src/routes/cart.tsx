@@ -59,7 +59,7 @@ const Cart = () => {
     context.onRemoveFromCart(newCart)
   };
   const CartItem = ({itemProp, onRemove}: CartItemProp) => {
-    const imagePath = `../img/${itemProp.sku}-1.png`
+    const imagePath = `./img/${itemProp.sku}-1.png`
 
     return (
       
@@ -68,12 +68,12 @@ const Cart = () => {
             
         <div className="cartDesc">
           {itemProp.stock ? <>
-          <Link to={`/shop/${itemProp.sku}`}  >
+          <Link to={`/asleepies-ceramics/shop/${itemProp.sku}`}  >
             <h6> {itemProp.title} </h6>
           </Link>
             <p> ${itemProp.price} </p> </>
           
-        : <Link to={`/shop/${itemProp.sku}`} className="routeLink" >
+        : <Link to={`/asleepies-ceramics/shop/${itemProp.sku}`} className="routeLink" >
             <p> Oh No! Item sold out </p>
           </Link> 
           }
@@ -91,7 +91,7 @@ const Cart = () => {
     setTimeout(async ()=>{
       context.removeAllFromCart()
       setCheckout(false)
-      nav(`/cart/checkout/${Math.random().toString(36).substring(2, 16)}`)
+      nav(`/asleepies-ceramics/cart/checkout/${Math.random().toString(36).substring(2, 16)}`)
     },2000)
   }
 
@@ -115,8 +115,8 @@ const Cart = () => {
     </div>
       {items.length ?
         <div className="cartSummary">
-          <h3>Total: ${`${total}`}</h3>
-          <button className="addToCart checkoutLink" disabled={checkout}
+          <h3 className="text-shadow">Total: ${`${total}`}</h3>
+          <button className="addToCart checkoutLink shadows" disabled={checkout}
             onClick={onCheckout}>
               {checkout ? <Spinner as='span' animation='border' size='sm'  role='status' /> : null  }
               Checkout

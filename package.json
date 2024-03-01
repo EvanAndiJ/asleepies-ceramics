@@ -31,6 +31,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "https://evanandij.github.io/asleepies-ceramics",
   "eslintConfig": {
     "extends": [
       "react-app",

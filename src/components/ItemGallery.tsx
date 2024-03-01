@@ -15,7 +15,7 @@ const ItemGallery = ({sku, images}: GalleryProps) => {
 
 
     return (
-        <div id='itemGallery' className='shadows'>
+        <div id='itemGallery' className=''>
             
             <img id='itemImg' src={`${imagePath}${main}.png`} 
                 alt={`Imagine a beatiful pot`} />

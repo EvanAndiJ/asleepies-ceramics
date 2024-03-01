@@ -6,13 +6,14 @@ import Shop from '../routes/shop';
 export default function FeaturedItems() {
 
     const items = ['bwl001', 'pot001', 'vas001']
+
     return (<>
-        <Carousel interval={3500} >
+        <Carousel interval={3500} className='shadows'>
            {items.map(item=> 
             <Carousel.Item key={item} >
-                <Link to={`/shop/${item}`}>
+                <Link to={`./shop/${item}`}>
                     <div className='featured-img-con'>
-                        <img src={`../img/${item}-1.png`} className='featured-img'/>
+                        <img src={`./img/${item}-1.png`} className='featured-img'/>
                     </div>
                 </Link>
                 {/* <Carousel.Caption>

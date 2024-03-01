@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState, useEffect, useRef } from 'react';
-import { Link, Outlet, useNavigate } from "react-router-dom";
+import { Link, Outlet, useNavigate, useLocation } from "react-router-dom";
 import type * as PP from "@paypal/paypal-js";
 
 import useToken from  './hooks/useToken'
@@ -122,9 +122,9 @@ function App() {
   return (
     <div id="appDiv">
       
-      <Link to="/">
+      <Link to="./">
         <img id='logoHead' 
-          src={`./img/asleepies.png` } />
+          src={`./img/asleepies.PNG` } />
       </Link>
       <h3>Handmade Ceramics</h3>
 

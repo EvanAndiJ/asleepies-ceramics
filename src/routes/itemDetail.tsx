@@ -58,18 +58,18 @@ const ItemDetail = () => {
     }, [])
 
   return (
-    <div>
+    <div className="itemDetail shadows">
         {sku ? <>
             
             {images.length ? <ItemGallery sku={sku} images={images}/> : null}
-           <div id='itemInfo' className=' text-shadow'> 
+           <div id='itemInfo' className=''> 
              <h3>{`${title}`}</h3>
              <p>{desc}</p>
              <h5>{`$${price}`}</h5>
-           </div>
 
-            <button onClick={()=>{if (skuInfo) {context.onAddToCart(skuInfo)}}} 
-              className="shadows addToCart">Add to Cart</button>
+            </div>
+              <button onClick={()=>{if (skuInfo) {context.onAddToCart(skuInfo)}}} 
+                className="addToCart">Add to Cart</button>
 
         </>
 
